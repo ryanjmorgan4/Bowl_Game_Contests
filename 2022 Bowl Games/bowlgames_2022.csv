@@ -1,0 +1,44 @@
+Bowl,Team1,Team2,Team1_FPI_Prob,Key,Aidan_Picks,Amber_Picks,Becca_Picks,Damon_Picks,Grandpa_Picks,Greta_Picks,Jason_Picks,Jaxon_Picks,Landen_Picks,Michelle_Picks,Ryan_Picks,Wrigley_Picks
+Bahamas Bowl,Miami (OH),UAB,0.233,UAB,UAB,Miami (OH),UAB,UAB,UAB,UAB,UAB,UAB,UAB,UAB,UAB,UAB
+Cure Bowl,UTSA,Troy,0.563,Troy,UTSA,UTSA,UTSA,Troy,UTSA,Troy,UTSA,UTSA,UTSA,UTSA,Troy,Troy
+Fenway Bowl,Cincinnati,Louisville,0.446,Louisville,Louisville,Louisville,Louisville,Louisville,Cincinnati,Cincinnati,Cincinnati,Cincinnati,Louisville,Cincinnati,Cincinnati,Cincinnati
+Celebration Bowl,North Carolina Central,Jackson State,0.4,North Carolina Central,Jackson State,North Carolina Central,Jackson State,Jackson State,Jackson State,North Carolina Central,Jackson State,North Carolina Central,Jackson State,Jackson State,Jackson State,Jackson State
+Las Vegas Bowl,Florida,Oregon State,0.429,Oregon State,Oregon State,Florida,Oregon State,Oregon State,Oregon State,Oregon State,Oregon State,Florida,Oregon State,Florida,Oregon State,Oregon State
+LA Bowl,Washington State,Fresno State,0.572,Fresno State,Washington State,Fresno State,Washington State,Washington State,Washington State,Washington State,Washington State,Fresno State,Washington State,Washington State,Fresno State,Washington State
+LendingTree Bowl,Rice,Southern Miss,0.336,Southern Miss,Southern Miss,Southern Miss,Rice,Southern Miss,Southern Miss,Rice,Southern Miss,Rice,Southern Miss,Rice,Southern Miss,Southern Miss
+New Mexico Bowl,SMU,BYU,0.525,BYU,SMU,SMU,SMU,BYU,BYU,SMU,BYU,BYU,BYU,SMU,SMU,BYU
+Frisco Bowl,North Texas,Boise State,0.385,Boise State,Boise State,North Texas,Boise State,Boise State,Boise State,Boise State,Boise State,Boise State,Boise State,North Texas,Boise State,Boise State
+Myrtle Beach Bowl,Marshall,UConn,0.798,Marshall,UConn,UConn,Marshall,Marshall,Marshall,UConn,Marshall,UConn,Marshall,UConn,Marshall,Marshall
+Famous Idaho Potato Bowl,Eastern Michigan,San Jose State,0.332,Eastern Michigan,San Jose State,San Jose State,San Jose State,Eastern Michigan,San Jose State,Eastern Michigan,San Jose State,Eastern Michigan,Eastern Michigan,Eastern Michigan,San Jose State,San Jose State
+Boca Raton Bowl,Liberty,Toledo,0.5,Toledo,Liberty,Toledo,Toledo,Liberty,Toledo,Liberty,Toledo,Liberty,Toledo,Liberty,Toledo,Toledo
+New Orleans Bowl,Western Kentucky,South Alabama,0.582,Western Kentucky,South Alabama,Western Kentucky,Western Kentucky,Western Kentucky,South Alabama,South Alabama,South Alabama,Western Kentucky,South Alabama,South Alabama,South Alabama,South Alabama
+Armed Forces Bowl,Baylor,Air Force,0.689,Air Force,Baylor,Baylor,Baylor,Baylor,Baylor,Baylor,Air Force,Baylor,Baylor,Baylor,Baylor,Baylor
+Independence Bowl,Louisiana Lafayette,Houston,0.358,Houston,Houston,Houston,Houston,Houston,Houston,Houston,Houston,Houston,Houston,Houston,Houston,Houston
+Gasparilla Bowl,Wake Forest,Missouri,0.6,Wake Forest,Wake Forest,Wake Forest,Wake Forest,Wake Forest,Wake Forest,Missouri,Wake Forest,Missouri,Wake Forest,Wake Forest,Wake Forest,Missouri
+Hawai'i Bowl,Middle Tennessee State,San Diego State,0.462,Middle Tennessee State,San Diego State,San Diego State,San Diego State,San Diego State,Middle Tennessee State,San Diego State,San Diego State,San Diego State,Middle Tennessee State,San Diego State,San Diego State,Middle Tennessee State
+Quick Lane Bowl,New Mexico State,Bowling Green,0.481,New Mexico State,Bowling Green,Bowling Green,Bowling Green,New Mexico State,New Mexico State,New Mexico State,Bowling Green,Bowling Green,Bowling Green,Bowling Green,New Mexico State,New Mexico State
+Camellia Bowl,Georgia Southern,Buffalo,0.571,Buffalo,Buffalo,Georgia Southern,Georgia Southern,Georgia Southern,Georgia Southern,Georgia Southern,Georgia Southern,Buffalo,Georgia Southern,Georgia Southern,Georgia Southern,Buffalo
+First Responder Bowl,Memphis,Utah State,0.803,Memphis,Memphis,Memphis,Memphis,Memphis,Memphis,Utah State,Memphis,Memphis,Memphis,Utah State,Memphis,Memphis
+Birmingham Bowl,Coastal Carolina,East Carolina,0.36,East Carolina,Coastal Carolina,Coastal Carolina,East Carolina,Coastal Carolina,East Carolina,East Carolina,Coastal Carolina,East Carolina,East Carolina,Coastal Carolina,East Carolina,East Carolina
+Guaranteed Rate Bowl,Wisconsin,Oklahoma State,0.534,Wisconsin,Oklahoma State,Wisconsin,Wisconsin,Oklahoma State,Wisconsin,Oklahoma State,Oklahoma State,Wisconsin,Wisconsin,Wisconsin,Wisconsin,Wisconsin
+Military Bowl,UCF,Duke,0.569,Duke,UCF,Duke,UCF,UCF,Duke,Duke,UCF,Duke,Duke,Duke,UCF,UCF
+Liberty Bowl,Kansas,Arkansas,0.421,Arkansas,Kansas,Kansas,Arkansas,Kansas,Arkansas,Kansas,Kansas,Kansas,Arkansas,Kansas,Arkansas,Arkansas
+Holiday Bowl,North Carolina,Oregon,0.303,Oregon,Oregon,North Carolina,North Carolina,Oregon,Oregon,North Carolina,Oregon,North Carolina,Oregon,North Carolina,Oregon,North Carolina
+Texas Bowl,Texas Tech,Ole Miss,0.383,Texas Tech,Ole Miss,Texas Tech,Ole Miss,Texas Tech,Ole Miss,Ole Miss,Ole Miss,Texas Tech,Ole Miss,Ole Miss,Ole Miss,Ole Miss
+Pinstripe Bowl,Syracuse,Minnesota,0.382,Minnesota,Minnesota,Minnesota,Minnesota,Minnesota,Minnesota,Syracuse,Minnesota,Minnesota,Minnesota,Minnesota,Minnesota,Minnesota
+Cheez-It Bowl,Oklahoma,Florida State,0.353,Florida State,Florida State,Florida State,Florida State,Florida State,Florida State,Oklahoma,Florida State,Oklahoma,Florida State,Oklahoma,Florida State,Oklahoma
+Alamo Bowl,Texas,Washington,0.753,Washington,Washington,Texas,Texas,Washington,Texas,Texas,Washington,Texas,Texas,Washington,Texas,Texas
+Duke's Mayo Bowl,Maryland,North Carolina State,0.531,Maryland,Maryland,North Carolina State,Maryland,North Carolina State,North Carolina State,North Carolina State,Maryland,North Carolina State,North Carolina State,Maryland,North Carolina State,Maryland
+Sun Bowl,Pittsburgh,UCLA,0.455,Pittsburgh,Pittsburgh,UCLA,UCLA,Pittsburgh,UCLA,Pittsburgh,UCLA,UCLA,UCLA,UCLA,UCLA,Pittsburgh
+Gator Bowl,Notre Dame,South Carolina,0.674,Notre Dame,South Carolina,South Carolina,South Carolina,South Carolina,South Carolina,Notre Dame,South Carolina,Notre Dame,Notre Dame,Notre Dame,Notre Dame,Notre Dame
+Arizona Bowl,Ohio,Wyoming,0.54,Ohio,Wyoming,Ohio,Ohio,Ohio,Ohio,Ohio,Ohio,Ohio,Wyoming,Ohio,Wyoming,Ohio
+Orange Bowl,Tennessee,Clemson,0.574,Tennessee,Tennessee,Tennessee,Clemson,Tennessee,Clemson,Clemson,Tennessee,Clemson,Clemson,Tennessee,Tennessee,Clemson
+Music City Bowl,Iowa,Kentucky,0.497,Iowa,Kentucky,Kentucky,Iowa,Kentucky,Kentucky,Kentucky,Kentucky,Kentucky,Iowa,Kentucky,Iowa,Kentucky
+Sugar Bowl,Alabama,Kansas State,0.727,Alabama,Alabama,Kansas State,Alabama,Alabama,Alabama,Alabama,Kansas State,Kansas State,Alabama,Alabama,Alabama,Kansas State
+Fiesta Bowl,Michigan,TCU,0.666,TCU,Michigan,TCU,Michigan,Michigan,Michigan,Michigan,Michigan,TCU,Michigan,Michigan,Michigan,Michigan
+Peach Bowl,Georgia,Ohio State,0.577,Georgia,Georgia,Georgia,Ohio State,Georgia,Georgia,Ohio State,Georgia,Ohio State,Georgia,Ohio State,Georgia,Ohio State
+ReliaQuest Bowl,Mississippi State,Illinois,0.542,Mississippi State,Mississippi State,Illinois,Mississippi State,Illinois,Illinois,Illinois,Mississippi State,Illinois,Illinois,Illinois,Illinois,Illinois
+Citrus Bowl,LSU,Purdue,0.684,LSU,LSU,Purdue,LSU,LSU,LSU,LSU,LSU,LSU,LSU,LSU,LSU,LSU
+Cotton Bowl,Tulane,USC,0.418,Tulane,USC,USC,USC,USC,USC,Tulane,USC,USC,Tulane,USC,USC,USC
+Rose Bowl,Penn State,Utah,0.426,Penn State,Utah,Penn State,Penn State,Utah,Utah,Penn State,Penn State,Utah,Utah,Penn State,Utah,Penn State
+National Championship,Georgia,TCU,0.722,,Georgia,TCU,Michigan,Georgia,Michigan,Michigan,Georgia,TCU,Michigan,Michigan,Georgia,Michigan

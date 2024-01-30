@@ -1,0 +1,27 @@
+Bowl,Team1,Team2,Team1_FPI_Prob,Key,Ryan_Picks,Becca_Picks,Jason_Picks,Damon_Picks,Grandpa_Picks,Greta_Picks,Amber_Picks,Mom_Picks,Wrigley_Picks
+Myrtle Beach Bowl,Appalachian State,North Texas,0.9,Appalachian State,Appalachian State,Appalachian State,Appalachian State,Appalachian State,Appalachian State,Appalachian State,Appalachian State,North Texas,Appalachian State
+Famous Idaho Potato Bowl,Tulane,Nevada,0.61,Nevada,Nevada,Nevada,Tulane,Tulane,Nevada,Tulane,Nevada,Tulane,Tulane
+Boca Raton Bowl,UCF,BYU,0.573,BYU,UCF,BYU,BYU,UCF,BYU,BYU,BYU,UCF,BYU
+New Orleans Bowl,Louisiana Tech,Georgia Southern,0.42,Georgia Southern,Georgia Southern,Louisiana Tech,Georgia Southern,Georgia Southern,Louisiana Tech,Louisiana Tech,Louisiana Tech,Louisiana Tech,Georgia Southern
+Montgomery Bowl,Florida Atlantic,Memphis,0.352,Memphis,Memphis,Memphis,Memphis,Memphis,Florida Atlantic,Florida Atlantic,Memphis,Memphis,Memphis
+New Mexico Bowl,Houston,Hawaii,0.824,Hawaii,Houston,Hawaii,Hawaii,Houston,Houston,Hawaii,Hawaii,Hawaii,Houston
+Camellia Bowl,Buffalo,Marshall,0.552,Buffalo,Buffalo,Marshall,Marshall,Buffalo,Buffalo,Buffalo,Marshall,Marshall,Buffalo
+Cure Bowl,Coastal Carolina,Liberty,0.708,Liberty,Coastal Carolina,Coastal Carolina,Coastal Carolina,Coastal Carolina,Coastal Carolina,Liberty,Coastal Carolina,Liberty,Coastal Carolina
+First Responder Bowl,UTSA,Louisiana-Lafayette,0.193,Louisiana-Lafayette,Louisiana-Lafayette,Louisiana-Lafayette,Louisiana-Lafayette,Louisiana-Lafayette,Louisiana-Lafayette,Louisiana-Lafayette,Louisiana-Lafayette,UTSA,Louisiana-Lafayette
+LendingTree Bowl,Georgia State,Western Kentucky,0.573,Georgia State,Western Kentucky,Georgia State,Georgia State,Georgia State,Georgia State,Georgia State,Georgia State,Georgia State,Georgia State
+Cheez-It Bowl,Miami,Oklahoma State,0.451,Oklahoma State,Miami,Miami,Miami,Miami,Oklahoma State,Oklahoma State,Miami,Miami,Miami
+Alamo Bowl,Texas,Colorado,0.802,Texas,Texas,Texas,Texas,Texas,Texas,Texas,Texas,Texas,Colorado
+Duke's Mayo Bowl,Wake Forest,Wisconsin,0.275,Wisconsin,Wake Forest,Wisconsin,Wisconsin,Wisconsin,Wisconsin,Wisconsin,Wisconsin,Wisconsin,Wake Forest
+Cotton Bowl,Oklahoma,Florida,0.573,Oklahoma,Florida,Florida,Florida,Florida,Oklahoma,Oklahoma,Florida,Florida,Florida
+Armed Forces Bowl,Mississippi State,Tulsa,0.394,Mississippi State,Mississippi State,Mississippi State,Tulsa,Mississippi State,Tulsa,Tulsa,Tulsa,Tulsa,Tulsa
+Arizona Bowl,San Jose State,Ball State,0.588,Ball State,San Jose State,San Jose State,San Jose State,Ball State,San Jose State,San Jose State,San Jose State,San Jose State,San Jose State
+Liberty Bowl,West Virginia,Army,0.734,West Virginia,Army,West Virginia,Army,West Virginia,Army,Army,Army,Army,Army
+Peach Bowl,Cincinnati,Georgia,0.3,Georgia,Cincinnati,Cincinnati,Cincinnati,Georgia,Georgia,Cincinnati,Cincinnati,Cincinnati,Cincinnati
+Citrus Bowl,Northwestern,Auburn,0.399,Northwestern,Auburn,Northwestern,Northwestern,Auburn,Northwestern,Northwestern,Northwestern,Northwestern,Northwestern
+Rose Bowl (Semi Final),Alabama,Notre Dame,0.812,Alabama,Alabama,Alabama,Alabama,Alabama,Alabama,Alabama,Alabama,Alabama,Alabama
+Sugar Bowl (Semi Final),Clemson,Ohio State,0.502,Ohio State,Ohio State,Clemson,Ohio State,Clemson,Clemson,Clemson,Clemson,Ohio State,Clemson
+Gator Bowl,North Carolina State,Kentucky,0.435,Kentucky,North Carolina State,Kentucky,North Carolina State,North Carolina State,Kentucky,Kentucky,Kentucky,North Carolina State,Kentucky
+Outback Bowl,Indiana,Ole Miss,0.739,Ole Miss,Indiana,Indiana,Indiana,Indiana,Indiana,Ole Miss,Ole Miss,Ole Miss,Ole Miss
+Fiesta Bowl,Iowa State,Oregon,0.523,Iowa State,Iowa State,Iowa State,Iowa State,Iowa State,Iowa State,Iowa State,Oregon,Iowa State,Iowa State
+Orange Bowl,Texas A&M,North Carolina,0.628,Texas A&M,Texas A&M,Texas A&M,Texas A&M,North Carolina,Texas A&M,Texas A&M,North Carolina,North Carolina,North Carolina
+National Championship,Rose Winner,Sugar Winner,0.615,,Alabama,Alabama,Alabama,Clemson,Clemson,Alabama,Clemson,Ohio State,Clemson

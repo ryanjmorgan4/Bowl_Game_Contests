@@ -1,0 +1,42 @@
+Bowl,Team1,Team2,Team1_FPI_Prob,Key,Ryan_Picks,Becca_Picks,Jason_Picks,Damon_Picks,Grandpa_Picks,Greta_Picks,Amber_Picks,Mom_Picks,Wrigley_Picks
+Bahamas Bowl,Buffalo,Charlotte,0.633,Buffalo,Buffalo,Buffalo,Buffalo,Charlotte,Buffalo,Charlotte,Charlotte,Charlotte,Buffalo
+Frisco Bowl,Kent State,Utah State,0.354,Kent State,Utah State,Utah State,Utah State,Utah State,Utah State,Utah State,Utah State,Utah State,Utah State
+Celebration Bowl,Alcorn State,North Carolina A&T,0.5,North Carolina A&T,Alcorn State,Alcorn State,North Carolina A&T,Alcorn State,North Carolina A&T,North Carolina A&T,Alcorn State,Alcorn State,Alcorn State
+New Mexico Bowl,Central Michigan,San Diego State,0.368,San Diego State,Central Michigan,Central Michigan,Central Michigan,Central Michigan,San Diego State,San Diego State,San Diego State,San Diego State,San Diego State
+Cure Bowl,Georgia Southern,Liberty,0.607,Liberty,Georgia Southern,Georgia Southern,Georgia Southern,Georgia Southern,Georgia Southern,Georgia Southern,Georgia Southern,Georgia Southern,Georgia Southern
+Boca Raton Bowl,FAU,SMU,0.529,FAU,SMU,FAU,SMU,SMU,FAU,FAU,FAU,SMU,SMU
+Camellia Bowl,Arkansas State,Florida International,0.567,Arkansas State,Florida International,Florida International,Arkansas State,Florida International,Arkansas State,Arkansas State,Arkansas State,Florida International,Florida International
+Las Vegas Bowl,Boise State,Washington,0.418,Washington,Washington,Boise State,Washington,Washington,Washington,Washington,Boise State,Washington,Boise State
+New Orleans Bowl,Appalachian State,UAB,0.834,Appalachian State,Appalachian State,Appalachian State,Appalachian State,Appalachian State,Appalachian State,UAB,UAB,UAB,UAB
+Gasparilla Bowl,Marshall,UCF,0.17,UCF,UCF,Marshall,UCF,UCF,UCF,Marshall,UCF,UCF,Marshall
+Hawaii Bowl,BYU,Hawaii,0.535,Hawaii,Hawaii,Hawaii,Hawaii,BYU,BYU,BYU,BYU,BYU,BYU
+Independence Bowl,Louisiana Tech,Miami,0.278,Louisiana Tech,Louisiana Tech,Miami,Miami,Miami,Louisiana Tech,Miami,Miami,Louisiana Tech,Miami
+Quick Lane Bowl,Eastern Michigan,Pittsburgh,0.301,Pittsburgh,Pittsburgh,Pittsburgh,Pittsburgh,Pittsburgh,Pittsburgh,Eastern Michigan,Pittsburgh,Pittsburgh,Pittsburgh
+Military Bowl,North Carolina,Temple,0.702,North Carolina,Temple,Temple,Temple,North Carolina,North Carolina,Temple,North Carolina,North Carolina,North Carolina
+Pinstripe Bowl,Michigan State,Wake Forest,0.603,Michigan State,Wake Forest,Wake Forest,Michigan State,Michigan State,Wake Forest,Wake Forest,Wake Forest,Michigan State,Wake Forest
+Texas Bowl,Oklahoma State,Texas A&M,0.38,Texas A&M,Texas A&M,Texas A&M,Texas A&M,Texas A&M,Oklahoma State,Oklahoma State,Texas A&M,Texas A&M,Oklahoma State
+Holiday Bowl,Iowa,USC,0.498,Iowa,USC,USC,USC,USC,Iowa,USC,USC,USC,USC
+Cheez-It Bowl,Air Force,Washington State,0.457,Air Force,Washington State,Washington State,Air Force,Washington State,Air Force,Washington State,Air Force,Air Force,Washington State
+Camping World Bowl,Iowa State,Notre Dame,0.324,Notre Dame,Iowa State,Iowa State,Notre Dame,Notre Dame,Notre Dame,Notre Dame,Notre Dame,Iowa State,Iowa State
+Cotton Bowl,Memphis,Penn State,0.289,Penn State,Penn State,Penn State,Penn State,Penn State,Penn State,Penn State,Penn State,Penn State,Memphis
+Peach Bowl (Semi Final),LSU,Oklahoma,0.674,LSU,LSU,LSU,LSU,LSU,LSU,LSU,LSU,LSU,LSU
+Fiesta Bowl (Semi Final),Ohio State,Clemson,0.54,Clemson,Clemson,Clemson,Ohio State,Clemson,Ohio State,Ohio State,Clemson,Ohio State,Clemson
+First Responder Bowl,Western Kentucky,Western Michigan,0.441,Western Kentucky,Western Michigan,Western Michigan,Western Kentucky,Western Michigan,Western Michigan,Western Michigan,Western Kentucky,Western Michigan,Western Kentucky
+Music City Bowl,Louisville,Mississippi State,0.351,Louisville,Mississippi State,Mississippi State,Louisville,Louisville,Mississippi State,Mississippi State,Louisville,Louisville,Louisville
+Redbox Bowl,California,Illinois,0.63,California,California,California,Illinois,California,California,Illinois,Illinois,California,California
+Orange Bowl,Florida,Virginia,0.821,Florida,Florida,Florida,Florida,Florida,Florida,Florida,Florida,Florida,Florida
+Belk Bowl,Kentucky,Virginia Tech,0.58,Kentucky,Virginia Tech,Virginia Tech,Kentucky,Kentucky,Kentucky,Kentucky,Virginia Tech,Virginia Tech,Kentucky
+Sun Bowl,Arizona State,Florida State,0.562,Arizona State,Arizona State,Arizona State,Arizona State,Arizona State,Arizona State,Arizona State,Florida State,Florida State,Arizona State
+Liberty Bowl,Kansas State,Navy,0.551,Navy,Kansas State,Navy,Navy,Navy,Navy,Kansas State,Kansas State,Navy,Kansas State
+Arizona Bowl,Georgia State,Wyoming,0.279,Wyoming,Wyoming,Wyoming,Wyoming,Wyoming,Wyoming,Georgia State,Georgia State,Georgia State,Georgia State
+Alamo Bowl,Texas,Utah,0.34,Texas,Utah,Utah,Utah,Texas,Utah,Texas,Utah,Texas,Texas
+Citrus Bowl,Alabama,Michigan,0.695,Alabama,Alabama,Alabama,Alabama,Alabama,Alabama,Michigan,Michigan,Michigan,Alabama
+Outback Bowl,Auburn,Minnesota,0.722,Minnesota,Minnesota,Minnesota,Auburn,Auburn,Auburn,Auburn,Minnesota,Minnesota,Minnesota
+Rose Bowl,Oregon,Wisconsin,0.543,Oregon,Wisconsin,Wisconsin,Wisconsin,Wisconsin,Wisconsin,Wisconsin,Oregon,Wisconsin,Wisconsin
+Sugar Bowl,Baylor,Georgia,0.301,Georgia,Georgia,Georgia,Georgia,Georgia,Georgia,Baylor,Georgia,Baylor,Baylor
+Birmingham Bowl,Boston College,Cincinnati,0.33,Cincinnati,Cincinnati,Cincinnati,Cincinnati,Cincinnati,Cincinnati,Cincinnati,Cincinnati,Cincinnati,Cincinnati
+Gator Bowl,Indiana,Tennessee,0.478,Tennessee,Indiana,Indiana,Indiana,Indiana,Tennessee,Tennessee,Indiana,Tennessee,Indiana
+Famous Idaho Potato Bowl,Nevada,Ohio,0.293,Ohio,Ohio,Ohio,Ohio,Ohio,Ohio,Ohio,Ohio,Ohio,Ohio
+Armed Forces Bowl,Southern Mississippi,Tulane,0.357,Tulane,Southern Mississippi,Southern Mississippi,Tulane,Southern Mississippi,Tulane,Southern Mississippi,Southern Mississippi,Southern Mississippi,Tulane
+LendingTree Bowl,Louisiana Lafayette,Miami (Ohio),0.812,Louisiana Lafayette,Louisiana Lafayette,Miami (Ohio),Louisiana Lafayette,Louisiana Lafayette,Louisiana Lafayette,Louisiana Lafayette,Louisiana Lafayette,Louisiana Lafayette,Louisiana Lafayette
+National Championship,Peach Winner,Fiesta Winner,0.5,,LSU,LSU,Ohio State,LSU,Ohio State,Ohio State,LSU,LSU,LSU
