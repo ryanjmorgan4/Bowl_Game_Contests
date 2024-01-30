@@ -1,0 +1,572 @@
+---
+title: "Untitled"
+author: "Ryan Morgan"
+date: "December 10, 2018"
+output: word_document
+---
+
+Make a function to compare someones picks to the key:
+
+```{r}
+score <- function(key, picks){
+  total = sum(key == picks)
+  committee = sum(key[c(35:41)] == picks[c(35:41)])
+  semisChamp = sum(key[c(36,37,41)]== picks[c(36,37,41)])
+  champ = sum(key[41]==picks[41])
+  
+  score = total + committee * .1 + semisChamp * .01 + champ*.001
+  
+  return(score)
+  
+}
+
+score(key2018, picks2018$Ryan)
+
+```
+
+Make a function to make a list of peoples scores:
+
+```{r}
+
+
+compare <- function(key, picks){
+  participants <- length(c(picks[1,]))
+  
+  
+  rankingsList <- data.frame(Participant=colnames(picks), picksCorrect=NA)
+  
+  
+  counter <- 1
+  
+  while(counter<participants+1){
+    
+    rankingsList[counter,2] = score(key, picks[,counter])
+    counter = counter+1
+  }
+  
+rankingsListNew <- rankingsList %>% arrange(-picksCorrect)
+  
+ return(rankingsListNew)
+}
+
+compare(key2018, picks2018)
+
+```
+
+
+Make a function to return who the current winner would be
+
+
+```{r}
+winning<- function(key,picks){
+ compareStuff <- compare(key,picks)
+ 
+ winner <- compareStuff[1,1]
+ 
+ return(winner)
+}
+
+```
+
+
+
+Find someone's "Best Case Scenario" for the remaining games
+
+```{r}
+bestcase <- function(key, persons_picks){
+  bestcase <- key
+  
+  index_of_zeroes <- which(key==0)
+  
+  bestcase[c(index_of_zeroes)] = persons_picks[c(index_of_zeroes)]
+  
+  return(bestcase)
+}
+
+
+```
+
+Use the best case scenario to see if the person wins their own best case:
+
+```{r}
+eliminated <- function(key, picks, person){
+  
+  bestCase <- bestcase(key,picks[,person])
+  
+  winner <- winning(bestCase,picks)
+  
+  eliminated <- winner!=colnames(picks)[person]
+  return(eliminated)
+}
+
+```
+
+Return list of people who are eliminated, based on them not even winning their best case.
+```{r}
+losers <- function(key,picks){
+  participants <- length(picks[1,])
+  
+  counter = 1
+  
+  loserLogic <- c(NA)
+  
+  while(counter < participants+1){
+    loserLogic[counter] = eliminated(key,picks,counter)
+    counter=counter+1
+  }
+  
+  losers <- colnames(picks)[loserLogic]
+return(losers)  
+}
+```
+
+
+Make a function to compare how many different are left between two people.
+
+```{r}
+differentleft <- function(person1, person2, key){
+  futureGames <- key == 0
+  person1Future = person1[futureGames]
+  person2Future = person2[futureGames]
+  
+  differentRemaining = sum(person1Future != person2Future)
+  
+  return(differentRemaining)
+  
+}
+
+```
+
+Total Different Remaining For all:
+```{r}
+differentleftAll <- function(picks, key){
+  participants <- length(picks[1,])
+  
+  returnMatrix <- matrix(data = NA, ncol = participants, nrow = participants)
+  colnames(returnMatrix) = colnames(picks)
+  rownames(returnMatrix) = colnames(picks)
+  
+  counter1 <- 1
+  
+  while(counter1 < participants+1){
+    counter2 = 1
+    while(counter2<participants+1){
+      returnMatrix[counter1,counter2]=differentleft(picks[,counter1],picks[,counter2],key)
+      counter2=counter2+1
+    }
+    counter1=counter1+1
+  }
+  
+  returnMatrix <- as.data.frame(returnMatrix)
+  
+  return(returnMatrix)
+}
+
+
+```
+
+Total Different Function:
+
+```{r}
+
+totalDifferent <- function(person1, person2){
+  totalDifferent <- sum(person1 != person2)
+  
+  return(totalDifferent)
+  
+}
+
+```
+
+
+totalDifferent Fucntion for everybody:
+
+```{r}
+totalDifferentAll <- function(picks){
+    participants <- length(picks[1,])
+  
+  returnMatrix <- matrix(data = NA, ncol = participants, nrow = participants)
+  colnames(returnMatrix) = colnames(picks)
+  rownames(returnMatrix) = colnames(picks)
+  
+  counter1 <- 1
+  
+  while(counter1 < participants+1){
+    counter2 = 1
+    while(counter2<participants+1){
+      returnMatrix[counter1,counter2]=totalDifferent(picks[,counter1],picks[,counter2])
+      counter2=counter2+1
+    }
+    counter1=counter1+1
+  }
+  
+  returnMatrix <- as.data.frame(returnMatrix)
+  
+  return(returnMatrix)
+}
+
+```
+
+Function For how many games Completed:
+```{r}
+numColmpleted <- function(key){
+  
+  gamesPlayed <- sum(key != 0)
+  
+  return(gamesPlayed)
+}
+
+```
+
+Function for how many total Games:
+
+```{r}
+
+numGames <- function(key){
+  numGames <- length(key)
+  return(numGames)
+}
+```
+
+Function for how many games remaining:
+```{r}
+numRemaining <- function (key){
+  totalGames <- numGames(key)
+  GamesCompleted<- numColmpleted(key)
+  
+  gamesRemaining <- totalGames - GamesCompleted
+  
+  return(gamesRemaining)
+}
+
+```
+
+
+Function to put it all together:
+
+```{r}
+bowlGameScenarios <- function(picks,key){
+  cat("Total Number of Games: ",numGames(key))
+  
+  cat("\n Games Played: ", numColmpleted(key))
+  
+  cat("\n Games Remaining: ",numRemaining(key), "\n \n \n")
+  
+  print (compare(key,picks))
+  
+  cat("\n Eliminated: ", losers(key , picks))
+  
+  cat(" \n \n Total Different Matrix: \n")
+  
+  print(totalDifferentAll(picks=picks))
+  
+  cat("\n \n \n Different Remaining Matrix: \n")
+  
+  print(differentleftAll(picks=picks, key=key))
+        
+  
+}
+```
+
+
+The 2018 Situation:
+
+```{r}
+Bowls2018 <- read.csv(file="C:\\Users\\Ryan\\Desktop\\Home\\BowlGames2018\\2018Bowl.csv",header=TRUE)
+
+key2018 <- Bowls2018$Numeric.Key
+
+key2018[is.na(key2018)] <- 0
+
+picks2018 <- Bowls2018[,c(14:21)]
+
+bowlGameScenarios(picks2018,key2018)
+
+combination_percent_chance_of_winning(picks=picks2018, key=key2018, probs=fpi_probs$Team2_Win_Prob, num_sims=2000, number_of_runs = 20 )
+
+```
+
+
+
+
+
+Make a function to make all possible combinations of next winners, see who the winner is in those scenarios. 
+
+
+issue:
+in the semifinal, we have 2 vs 3 and 1 vs 4. So scenarios where 2 wins cant have 3 winning the championship. 
+
+
+
+Possible semifinal possibilities:
+
+(Oklahoma v Alabama, Clemson v Notre Dame, national championship)
+
+
+
+
+(1,1,1)
+(1,1,2)
+(1,2,2)
+(1,2,4)
+
+(2,1,3)
+(2,1,1)
+
+(2,2,3)
+(2,2,4)
+
+```{r}
+all_possible_scenarios <- function(num_games){
+n<- num_games
+
+l<- c(rep(list(1:2),n-3))
+
+all_poss<- expand.grid(l)
+
+all_poss <- t(all_poss)
+
+
+
+num_scenarios <- 2^(n-3)
+
+semis_1 <- c(1,1,1)
+semis_2 <- c(1,1,2)
+
+semis_3<- c(1,2,2)
+semis_4 <- c(1,2,4)
+
+semis_5<- c(2,1,3)
+semis_6 <- c(2,1,1)
+
+semis_7<-c(2,2,3)
+semis_8<-c(2,2,4)
+
+TEST1<- rbind.data.frame(all_poss, semis_1[1],semis_1[2],semis_1[3])
+
+TEST2<- rbind.data.frame(all_poss, semis_2[1],semis_2[2],semis_2[3])
+
+TEST3<- rbind.data.frame(all_poss, semis_3[1],semis_3[2],semis_3[3])
+
+TEST4<- rbind.data.frame(all_poss, semis_4[1],semis_4[2],semis_4[3])
+
+TEST5<- rbind.data.frame(all_poss, semis_5[1],semis_5[2],semis_5[3])
+
+TEST6<- rbind.data.frame(all_poss, semis_6[1],semis_6[2],semis_6[3])
+
+TEST7<- rbind.data.frame(all_poss, semis_7[1],semis_7[2],semis_7[3])
+
+TEST8<- rbind.data.frame(all_poss, semis_8[1],semis_8[2],semis_8[3])
+
+all_poss <- cbind.data.frame(TEST1,TEST2,TEST3,TEST4,TEST5,TEST6,TEST7,TEST8)
+return(all_poss)
+
+}
+
+all_possibilities<- all_possible_scenarios(20)
+```
+
+Use the FPI to find a % chance that somebody wins. 
+
+Make some simulations:
+
+```{r}
+simulate_key <- function(picks, key, probs){
+
+  num_completed = numColmpleted(key = key)
+  
+  num_games = numGames(key = key)
+  
+  num_simulations <- num_games - num_completed
+  
+  sim_probs <- probs[num_completed+1:num_games-3]
+  
+  simulations <- rbinom(n=num_games-3-num_completed, 1, prob=sim_probs)
+  
+  simulations = simulations+1
+  
+  completed_games <- key[1:numColmpleted(key)]
+  
+  semis_1 <- c(1,1,1)
+  semis_2 <- c(1,1,2)
+
+  semis_3<- c(1,2,2)
+  semis_4 <- c(1,2,4)
+
+  semis_5<- c(2,1,3)
+  semis_6 <- c(2,1,1)
+
+  semis_7<-c(2,2,3)
+  semis_8<-c(2,2,4)
+  
+  sim_df <- data.frame(S1 = c(completed_games, simulations, semis_1), S2 = c(completed_games, simulations, semis_2), S3 = c(completed_games, simulations, semis_3), S4=c(completed_games, simulations, semis_4), S5 = c(completed_games, simulations, semis_5), S6 = c(completed_games, simulations, semis_6), S7 = c(completed_games, simulations, semis_7), S8 = c(completed_games, simulations, semis_8))
+  
+  
+  return(sim_df)
+
+}
+
+
+fpi_probs <- read.csv(file="C:\\Users\\Ryan\\Desktop\\Home\\BowlGames2018\\fpi_probs.csv",header=TRUE)
+
+
+simulate_key(picks= picks2018, key=key2018, probs = fpi_probs$Team2_Win_Prob)
+
+```
+
+
+
+Now, make a function to do a ton of simulations. 
+
+
+```{r}
+mult_simulations <- function(picks=picks2018, key=key2018, probs=fpi_probs$Team2_Win_Prob, num_sims=10){
+  
+  ret_df = simulate_key(picks, key, probs)
+  
+  counter=2
+  
+  
+  while(counter< num_sims+1){
+    
+    
+    new_df = simulate_key(picks, key, probs)
+    
+    ret_df = bind_cols(ret_df, new_df)
+    
+    counter=counter+1
+  }
+  
+  return(ret_df)
+}
+
+```
+
+
+
+Make a function to find the winner for multiple scenarios. 
+
+
+```{r}
+mult_winners <- function(picks, sims){
+  num_sims = dim(sims)[2]
+  
+  ret_list = rep(NA,num_sims)
+  
+  
+  counter=1
+  
+  while(counter<num_sims+1){
+    ret_list[counter] = paste(winning(key=sims[,counter], picks=picks))
+    
+    counter=counter+1
+    
+  }
+  
+  return(ret_list)
+  
+}
+
+
+
+```
+
+A function to put it all together, and just give a percent chance of winning:
+
+
+```{r}
+percent_chance_of_winning <- function(picks, key, probs, num_sims){
+  simulations = mult_simulations(picks=picks, key=key, probs=probs, num_sims=num_sims)
+  
+  
+  winners= mult_winners(picks=picks, sims = simulations)
+  
+  ret_table = table(winners)/(8*num_sims)*100
+  
+  return(ret_table)
+}
+
+
+```
+
+A function to find combinations of percent chances of winning:
+
+```{r}
+combination_percent_chance_of_winning <- function(picks, key, probs, num_sims, number_of_runs){
+  
+  return_table = percent_chance_of_winning(picks, key, probs, num_sims)
+  
+  counter=2
+  
+  while(counter< number_of_runs+1){
+    
+    return_table = return_table + percent_chance_of_winning(picks, key, probs, num_sims)
+    
+   counter=counter+1 
+  }
+  
+  
+ return_table= return_table/number_of_runs
+  
+  return(round(return_table,2))
+  
+}
+
+
+```
+
+
+
+NEW STUFF:
+
+
+Favorites and upsets:
+```{r}
+all_favorites <- round(fpi_probs$Team2_Win_Prob)+1
+
+all_favorites[1] = 1
+
+all_favorites[41] = 1
+
+
+all_upsets <- all_favorites + (-1)^(1+all_favorites)
+all_upsets[41] = 3
+
+
+winning(key=all_favorites, picks = picks2018)
+compare(key = all_favorites, picks=picks2018)
+
+winning(key=all_upsets, picks = picks2018)
+compare(key=all_upsets, picks =picks2018)
+  
+```
+Early Odds:
+
+You need two games completed in order to find simulations. So, find the percent chances for the four scenarios of the first two games, then multiply and add.
+
+```{r}
+scen_1_key <- c(1,1,rep(0,39))
+scen_2_key <- c(1,2,rep(0,39))
+scen_3_key <- c(2,1,rep(0,39))
+scen_4_key <- c(2,2,rep(0,39))
+
+scen_1_prob = .5*(1-.723)
+scen_2_prob = .5*.723
+scen_3_prob = .5 * (1-.723)
+scen_4_prob = .5 * .723
+
+
+scen_1_sims <- combination_percent_chance_of_winning(picks = picks2018, key = scen_1_key, probs = fpi_probs$Team2_Win_Prob, num_sims = 1000, number_of_runs = 20)
+
+scen_2_sims <- combination_percent_chance_of_winning(picks = picks2018, key = scen_2_key, probs = fpi_probs$Team2_Win_Prob, num_sims = 1000, number_of_runs = 20)
+
+scen_3_sims <- combination_percent_chance_of_winning(picks = picks2018, key = scen_3_key, probs = fpi_probs$Team2_Win_Prob, num_sims =1000, number_of_runs = 20)
+
+scen_4_sims <- combination_percent_chance_of_winning(picks = picks2018, key = scen_4_key, probs = fpi_probs$Team2_Win_Prob, num_sims = 1000, number_of_runs = 20)
+
+
+scen_1_prob*scen_1_sims+scen_2_prob*scen_2_sims+scen_3_prob*scen_3_sims+scen_4_prob*scen_4_sims
+
+
+```
+
